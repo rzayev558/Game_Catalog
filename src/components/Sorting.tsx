@@ -6,6 +6,7 @@ import {
   SelectChangeEvent,
 } from "@mui/material";
 import { SortOption, sortOptions } from "../types";
+
 type SortingProps = {
   sortBy: SortOption;
   handleSort: (event: SelectChangeEvent<SortOption>) => void;

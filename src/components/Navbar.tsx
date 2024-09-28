@@ -9,6 +9,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ onSearch, onFilterBaseGames }) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
+
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
     onSearch(e.target.value);

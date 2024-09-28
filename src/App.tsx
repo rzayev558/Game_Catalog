@@ -17,7 +17,7 @@ function App() {
   };
 
   // not a big fan of doing this here but it's a small app
-  // but we would ideally have this state as a global state in the store
+  // but we would ideally have this as a global state in the store
   const handleFilterBaseGames = () => {
     if (showingBaseGames) {
       setFilteredGames(games);

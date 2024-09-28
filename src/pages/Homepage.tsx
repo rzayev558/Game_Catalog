@@ -10,6 +10,7 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ filteredGames }) => {
   const [sortBy, setSortBy] = useState<SortOption>(SortOption.Name);
+
   const handleSort = (event: SelectChangeEvent<SortOption>) => {
     //not sure why typescript complains without typecasting
     setSortBy(event.target.value as SortOption);
